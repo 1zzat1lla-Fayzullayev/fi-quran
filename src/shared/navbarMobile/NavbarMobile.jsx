@@ -6,13 +6,14 @@ function NavbarMobile({ handleShowMobileNav }) {
       <div
         className={`mobile__nav w-full h-full bg-base-200 z-[999] absolute top-0 left-0 right-0 bottom-0`}
       >
-        <p
-          className={`bx bx-x absolute right-0 text-red-600 text-[40px] m-[15px] cursor-pointer`}
+        <div
           onClick={handleShowMobileNav}
+          className="flex justify-center items-center gap-[10px] mt-[20px] absolute right-5"
         >
-          X
-        </p>
-        <ul className="flex flex-col justify-center text-base-100 items-center gap-[40px] text-[20px] font-Montserrat cursor-pointer h-[100vh]">
+          <div className="bg-base-content w-[20px] rotate-[45deg] h-[2px] absolute"></div>
+          <div className="bg-base-content w-[20px] rotate-[135deg] h-[2px] absolute"></div>
+        </div>
+        <ul className="flex flex-col justify-center text-base-content items-center gap-[40px] text-[20px] font-Montserrat cursor-pointer h-[100vh]">
           <li onClick={handleShowMobileNav}>
             <a href="#">Bosh sahifa</a>
           </li>

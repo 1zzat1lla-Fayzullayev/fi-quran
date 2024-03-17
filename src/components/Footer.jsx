@@ -1,7 +1,7 @@
-import React from "react";
+// import React from "react";
 
-function Footer() {
-  return <div className="bg-white w-[100px] h-[100px]">Footer</div>;
-}
+// function Footer() {
+//   return <div className="bg-base-content w-[100px] h-[100px]">Footer</div>;
+// }
 
-export default Footer;
+// export default Footer;
