@@ -16,8 +16,8 @@ function Card({ surah }) {
               {surah.englishNameTranslation}
             </p>
           </div>
-          <div className="mr-[15px]">
-            <p className="text-white">{surah.name}</p>
+          <div className="mr-[15px] font-Poppins">
+            <p className="text-white font-medium font-Montserrat">{surah.name}</p>
             <p className="text-[#6c7277] text-[12px] onBlue-p font-semibold">
               {surah.ayahs.length} Oyat
             </p>

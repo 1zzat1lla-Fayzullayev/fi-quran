@@ -14,7 +14,6 @@ import SelectedSurah from "./pages/SelectedSurah";
 import UzbTranslate from "./pages/UzbTranslate";
 import Footer from "./components/Footer";
 function App() {
-  
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     const loadingTimeout = setTimeout(() => {

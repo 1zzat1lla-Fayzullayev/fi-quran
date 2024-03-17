@@ -55,7 +55,7 @@ function Navbar() {
         className="flex fixed w-[100%] z-[777] justify-evenly md:justify-around items-center bg-[#272f33] rounded-bl-[15px] rounded-br-[15px] p-[8px] font-Poppins"
         style={navbarBackground}
       >
-        <h1 className="text-white text-[25px] md:text-[35px] font-semibold cursor-pointer font-Poppins">
+        <h1 className="text-white text-[25px] md:text-[35px] font-semibold cursor-pointer font-Montserrat">
           Quran
         </h1>
         {/* List */}
