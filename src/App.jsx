@@ -12,7 +12,7 @@ import "./loading.css";
 import LoadingSvg from "./svg/LoadingSvg";
 import SelectedSurah from "./pages/SelectedSurah";
 import UzbTranslate from "./pages/UzbTranslate";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 import Swap from "./shared/ui/Swap";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -71,7 +71,7 @@ const AuthenticatedRoutes = () => (
   <>
     <Navbar />
     <Hero />
-    {/* <Footer /> */}
+    <Footer />
   </>
 );
 

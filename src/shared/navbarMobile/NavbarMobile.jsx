@@ -8,7 +8,7 @@ function NavbarMobile({ handleShowMobileNav }) {
       >
         <div
           onClick={handleShowMobileNav}
-          className="flex justify-center items-center gap-[10px] mt-[20px] absolute right-5"
+          className="flex justify-center items-center gap-[10px] absolute top-7 right-7"
         >
           <div className="bg-base-content w-[20px] rotate-[45deg] h-[2px] absolute"></div>
           <div className="bg-base-content w-[20px] rotate-[135deg] h-[2px] absolute"></div>

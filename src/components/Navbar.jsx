@@ -56,7 +56,6 @@ function Navbar() {
         </h1>
         {/* List */}
         <List />
-
         {/* Hamburger */}
         <Hamburger handleShowMobileNav={handleShowMobileNav} />
       </nav>

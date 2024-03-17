@@ -1,7 +1,15 @@
-// import React from "react";
+import React from "react";
 
-// function Footer() {
-//   return <div className="bg-base-content w-[100px] h-[100px]">Footer</div>;
-// }
+function Footer() {
+  return (
+    <>  
+      <footer className="footer footer-center p-4 bg-base-300 text-base-content mt-[50px]">
+        <aside>
+          <p className="font-Montserrat">Copyright © 2024 - Fayzullayev Izzatilla</p>
+        </aside>
+      </footer>
+    </>
+  );
+}
 
-// export default Footer;
+export default Footer;

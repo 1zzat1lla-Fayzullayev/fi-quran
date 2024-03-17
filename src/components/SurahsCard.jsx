@@ -50,7 +50,7 @@ function SurahsCard({ search }) {
   };
 
   if (loading) {
-    return <h1>Biroz kuting...</h1>; 
+    return <h1 className="text-[20px] md:text-[25px] mt-[10px] font-Montserrat">Biroz kuting...</h1>;
   }
 
   if (error) {
