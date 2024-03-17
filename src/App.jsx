@@ -30,7 +30,7 @@ const Cursor = () => {
   }, []);
 
   return (
-    <>
+    <div className="hidden lg:flex">
       <div
         className="cursor-dot bg-base-content"
         style={{ left: `${position.x}px`, top: `${position.y}px` }}
@@ -39,7 +39,7 @@ const Cursor = () => {
         className="cursor-outline"
         style={{ left: `${position.x}px`, top: `${position.y}px` }}
       ></div>
-    </>
+    </div>
   );
 };
 
