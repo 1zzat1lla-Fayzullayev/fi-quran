@@ -13,8 +13,26 @@ import LoadingSvg from "./svg/LoadingSvg";
 import SelectedSurah from "./pages/SelectedSurah";
 import UzbTranslate from "./pages/UzbTranslate";
 import Footer from "./components/Footer";
+import Swap from "./shared/ui/Swap";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : "dark"
+  );
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+    const localTheme = localStorage.getItem("theme");
+    document.querySelector("html").setAttribute("data-theme", localTheme);
+  }, [theme]);
+
+  const handleToggle = (e) => {
+    if (e.target.checked) {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+  };
+
   useEffect(() => {
     const loadingTimeout = setTimeout(() => {
       setIsLoading(false);
@@ -24,7 +42,10 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div>
+      <div className="fixed top-[90%] right-3 z-[1000]">
+        <Swap handleToggle={handleToggle} />
+      </div>
       <Router>
         {isLoading ? (
           <div className="loader loader--style1" title="0">
@@ -32,7 +53,6 @@ function App() {
           </div>
         ) : (
           <Routes>
-            {/* <Route path="/register" element={<Register />} /> */}
             <Route path="/surah/:number" element={<SelectedSurah />} />
             <Route
               path="/translate/:numberInSurah"
@@ -43,7 +63,7 @@ function App() {
           </Routes>
         )}
       </Router>
-    </>
+    </div>
   );
 }
 

@@ -59,7 +59,7 @@ function SelectedSurah() {
   return (
     <>
       {JSON.stringify(surah) !== "{}" ? (
-        <div className="text-white font-Poppins">
+        <div className="font-Poppins">
           <Wrapper>
             <div className="w-[100%]">
               <AudioPlayer

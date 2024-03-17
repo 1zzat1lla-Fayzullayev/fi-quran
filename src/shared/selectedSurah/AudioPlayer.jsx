@@ -89,18 +89,20 @@ function AudioPlayer({
             </audio>
           </div>
           <div className="flex gap-[10px]">
-            <p
-              className="bg-[#DDE6ED] text-black p-[3px] md:p-[5px] rounded-[10px] cursor-pointer w-[120px] text-center font-Poppins text-[14px] mt-[30px]"
-              onClick={handleNavigateHome}
-            >
-              Barcha suralar
-            </p>
-            <p
-              className="bg-[#DDE6ED] text-black p-[3px] md:p-[5px] rounded-[10px] cursor-pointer w-[120px] text-center font-Poppins text-[14px] mt-[30px]"
-              onClick={handleClickAyah}
-            >
-              Tarjima qilish
-            </p>
+            <div className="text-sm breadcrumbs">
+              <ul>
+                <li>
+                  <p className="cursor-pointer" onClick={handleNavigateHome}>
+                    Barcha suralar
+                  </p>
+                </li>
+                <li>
+                  <p className="cursor-pointer" onClick={handleClickAyah}>
+                    Tarjima qilish
+                  </p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       ) : (
