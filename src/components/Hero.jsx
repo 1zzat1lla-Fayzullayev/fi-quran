@@ -12,14 +12,15 @@ function Hero() {
         AL Quran
       </h1>
       <div className="relative w-[80%] md:w-[50%]">
-        <input
-          type="text"
-          name="text"
-          placeholder="Nima o'qimoqchisiz?"
-          value={search}
-          onChange={handleSearchChange}
-          className="input input-bordered relative rounded-[100px] bg-base-200 pr-[55px] md:px-[50px] px-[25px] font-Montserrat text-[17px] md:text-[20px] border-none outline-none w-[100%] py-[15px] md:py-[35px]"
-        />
+        <label className="flex items-center gap-2 input input-bordered relative rounded-[100px] bg-base-200 pr-[55px] md:px-[50px] px-[25px] font-Montserrat text-[17px] md:text-[20px] border-none w-[100%] py-[15px] md:py-[35px]">
+          <input
+            type="text"
+            className="grow"
+            placeholder="Nima o'qimoqchisiz?"
+            onChange={handleSearchChange}
+            value={search}
+          />
+        </label>
       </div>
       <div>
         <SurahsCard search={search} />

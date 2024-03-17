@@ -1,10 +1,10 @@
-import React from "react";
-import Wrapper from "../layout/Wrapper";
+import Aos from "aos";
+import React, { useEffect } from "react";
 
 function Card({ surah }) {
   return (
     <>
-      <div className="card w-[300px] md:w-[350px] h-[80px] border border-[#464b50] cursor-pointer rounded-[6px] hover:border-[#2ca4ab] flex justify-center flex-row font-Poppins z-[10] bg-base-100">
+      <div className="card w-[300px] md:w-[350px] h-[80px] border border-[#464b50] cursor-pointer rounded-[6px] hover:border-[#2ca4ab] flex justify-center flex-row font-Poppins z-[10] bg-base-100 ">
         <div className="card__element bg-base-content flex justify-center items-center rounded-[3px] transform rotate-[45deg] m-auto ml-[20px]">
           <p className="transform text-base-100 rotate-[315deg] font-semibold">
             {surah.number}
