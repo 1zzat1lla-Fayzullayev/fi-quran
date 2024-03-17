@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   box-sizing: border-box;
 }
@@ -47,4 +48,26 @@ html {
 
 .audio-playing p {
   color: green;
+}
+
+.cursor-dot {
+  width: 5px;
+  height: 5px;
+}
+
+.cursor-outline {
+  width: 30px;
+  height: 30px;
+  border: 2px solid;
+}
+
+.cursor-dot,
+.cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 10000;
+  pointer-events: none;
 }
