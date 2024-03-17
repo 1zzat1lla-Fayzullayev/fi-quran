@@ -1,18 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
-import Wrapper from "../layout/Wrapper";
 import NavbarMobile from "../shared/navbarMobile/NavbarMobile";
-import ShowProfile from "../shared/navbarLaptop/ShowProfile";
-import LogOutButton from "../shared/navbarLaptop/LogOutButton";
 import Hamburger from "../shared/navbarLaptop/Hamburger";
 import List from "../shared/navbarLaptop/List";
 
 function Navbar() {
-  const [isLoginOnEmail, setIsLoginOnEmail] = useState(false);
   const [showMobileNav, setShowMobileNav] = useState(false);
-  const [navbarBackground, setNavbarBackground] = useState({
-    backgroundColor: "#272f33",
-    backdropFilter: "blur(0px)",
-  });
   const dropdownRef = useRef(null);
 
   const handleClickOutside = (event) => {
@@ -24,28 +16,11 @@ function Navbar() {
     document.body.classList.toggle("overflow-hidden");
   };
 
-  const handleScroll = () => {
-    const scrollPosition = window.scrollY;
-    if (scrollPosition > 50) {
-      setNavbarBackground({
-        backgroundColor: "#3c4347",
-        backdropFilter: "blur(100px)",
-      });
-    } else {
-      setNavbarBackground({
-        backgroundColor: "#272f33",
-        backdropFilter: "blur(0px)",
-      });
-    }
-  };
-
   useEffect(() => {
     document.addEventListener("click", handleClickOutside);
-    window.addEventListener("scroll", handleScroll);
 
     return () => {
       document.removeEventListener("click", handleClickOutside);
-      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
   return (

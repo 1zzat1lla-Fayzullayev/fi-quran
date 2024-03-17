@@ -18,7 +18,7 @@ function Hero() {
           placeholder="Nima o'qimoqchisiz?"
           value={search}
           onChange={handleSearchChange}
-          className="relative rounded-[100px] bg-base-200 pr-[55px] md:px-[50px] px-[25px] text-[20px] border-none outline-none w-[100%] py-[15px] md:py-[20px]"
+          className="input input-bordered relative rounded-[100px] bg-base-200 pr-[55px] md:px-[50px] px-[25px] font-Montserrat text-[17px] md:text-[20px] border-none outline-none w-[100%] py-[15px] md:py-[35px]"
         />
       </div>
       <div>

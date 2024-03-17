@@ -45,17 +45,20 @@ function UzbTranslate() {
           <Wrapper>
             <div className="flex justify-end gap-[10px] font-Montserrat pt-[20px]">
               <div className="text-sm breadcrumbs">
-                <ul>
+                <ul className="mr-[30px]">
                   <li>
                     <p
-                      className="cursor-pointer"
+                      className="cursor-pointer text-[12px] md:text-[16px]"
                       onClick={handleNavigateToHome}
                     >
                       Barcha suralar
                     </p>
                   </li>
                   <li>
-                    <p className="cursor-pointer" onClick={handleGoBack}>
+                    <p
+                      className="cursor-pointer text-[12px] md:text-[16px]"
+                      onClick={handleGoBack}
+                    >
                       Sura
                     </p>
                   </li>

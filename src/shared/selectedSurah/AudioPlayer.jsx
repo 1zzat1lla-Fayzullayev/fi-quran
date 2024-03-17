@@ -66,13 +66,12 @@ function AudioPlayer({
         <div className="flex justify-between items-center w-[100%]">
           <div>
             <div className="flex flex-col items-center">
-              <img
-                src={sound}
-                alt="sound image"
+              <p
+                className="font-Montserrat cursor-pointer text-[12px] md:text-[16px]"
                 onClick={toggleAudio}
-                style={{ cursor: "pointer" }}
-                className={`w-[50px] md:w-[70px] bg-[#DDE6ED] rounded-[50%] p-[3px] md:p-[5px] mt-[30px]`}
-              />
+              >
+                Audio tinglash📻
+              </p>
               {isPlaying && (
                 <button onClick={pauseAudio} className="mt-[5px]">
                   Pause
@@ -92,12 +91,18 @@ function AudioPlayer({
             <div className="text-sm breadcrumbs">
               <ul>
                 <li>
-                  <p className="cursor-pointer" onClick={handleNavigateHome}>
+                  <p
+                    className="cursor-pointer text-[12px] md:text-[16px]"
+                    onClick={handleNavigateHome}
+                  >
                     Barcha suralar
                   </p>
                 </li>
                 <li>
-                  <p className="cursor-pointer" onClick={handleClickAyah}>
+                  <p
+                    className="cursor-pointer text-[12px] md:text-[16px]"
+                    onClick={handleClickAyah}
+                  >
                     Tarjima qilish
                   </p>
                 </li>
